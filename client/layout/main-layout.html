@@ -1,0 +1,16 @@
+<template name="mainLayout">
+  <head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.3/phaser.js">
+  </script>
+  </head>
+  <nav>
+    <div class="nav-wrapper teal">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="row"></div>
+    {{ > yield }}
+  </div>
+</template>

@@ -1,0 +1,36 @@
+<template name="register">
+  {{#autoForm collection="Meteor.users" id="insertBookForm" type="insert"}}
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          {{> afQuickField name='email' id="email"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          {{> afQuickField name='username' id="username"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          {{> afQuickField name='firstName' id="firstName"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          {{> afQuickField name='lastName' id="lastName"}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          {{> afQuickField name='password' id="password"}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </div>
+  {{/autoForm}}
+</template>
